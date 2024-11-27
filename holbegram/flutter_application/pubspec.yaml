@@ -1,0 +1,53 @@
+name: flutter_application
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_staggered_grid_view: ^0.4.0
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.5.0
+  firebase_storage: ^12.3.6
+  firebase_database: ^11.1.6
+  cupertino_icons: ^1.0.6
+  uuid: ^4.4.2
+  image_picker: ^1.1.2
+  bottom_navy_bar: ^6.1.0
+  badges: ^3.1.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/user_placeholder.png
+
+  fonts:
+      - family: Billabong
+        fonts:
+          - asset: assets/fonts/Billabong.ttf
+      - family: InstagramSans
+        fonts:
+          - asset: assets/fonts/InstagramSans.ttf
+
+flutter_icons:
+  android: false
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon/icon-appstore.png"
